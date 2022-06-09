@@ -20,7 +20,7 @@ int main() {
     
     FILE * pFile;
     
-    char input[]="/Users/russian/Desktop/example.wav";
+    char input[]="/Users/russian/Desktop/example.wav"; //INSERT PATH TO INPUT FILE
 
     std::ifstream infile (input,std::ifstream::binary);
     std::ifstream infile2 (input,std::ifstream::binary);
@@ -53,7 +53,7 @@ int main() {
     time_t now = time(0);
     // convert time to string form
     char* dt = ctime(&now);
-    std::string ofile ("/Users/russian/Desktop/DIY Samples/RESULTS/SH_TEST_SPEECH_");
+    std::string ofile ("/Users/russian/Desktop/DIY Samples/RESULTS/SH_TEST_SPEECH_"); //INSERT PATH TO OUTPUT FILE
     ofile += dt;
     ofile += ".wav";
     std::cout<<ofile;
